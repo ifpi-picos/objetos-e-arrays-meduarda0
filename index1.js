@@ -1,9 +1,18 @@
-//Crie um Objeto para representar um aluno, incluindo propriedades como nome, idade, curso e notas. Popule o Objeto com valores e imprima os dados do aluno.
-const aluno = {
-    nome: "Esmeralda",
-    idade: "20",
-    curso: "ads",
-    notas: "9, 10, 9",
-  };
-  console.log(aluno.nome);
-  
+//Usando CommonJS, crie um módulo que contém funções matemáticas básicas (soma, subtração, multiplicação, divisão) e exponenciação.  Em seguida, utilize essas funções em outro arquivo.
+
+function soma(a, b) {
+    return a + b;
+  }
+  function subtracao(a, b) {
+    return a - b;
+  }
+  function multiplicacao(a, b) {
+    return a * b;
+  }
+  function divisao(a, b) {
+    return a / b;
+  }
+  function exponenciacao(a, b) {
+    return a ** b;
+  }
+  module.exports = {soma, subtracao, multiplicacao, divisao, exponenciacao}
